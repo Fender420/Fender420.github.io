@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="icons/png/glyphicons-4-user.png">
     <link rel="stylesheet" href="maze.css">
+    <script src="jquery-1.12.0.js"></script>
     <title>Yaroslav CV</title>
 
 
@@ -78,7 +79,8 @@
 </nav>
 
     <div class="maze-container">
-      <div id='modalGameOver'>GAME OVER</div>
+      <div id='modalGameOver'>GAME OVER<br>
+        <button id="butt" style="font-size: 10pt">TRY AGAIN</button></div>
       <div id="mazeBlock1"></div>
       <div id="mazeBlock2"></div>
       <div id="mazeBlock3"></div>
@@ -86,16 +88,18 @@
       <div id="mazeBlock5"></div>
       <div id="mazeBlock6"></div>
       <div id="mazeBlock7"></div>
+      <div id="mazeBlock8"></div>
+      <div id="mazeBlock9"></div>
+      <div id="mazeBlock10"></div>
+      <div id="mazeBlock11"></div>
+      <div id="mazeBlock12"></div>
+      <div id="mazeBlock13"></div>
+      <div id="mazeBlock14"></div>
+      <div id="mazeBlock15"></div>
+      <div id="mazeBlock16"></div>
     </div>
 
-    <script>
-      $(document).ready(function(){
-        $("#mazeBlock2").mouseover(function(){
-          $("#modalGameOver").fadeIn('slow');
-          setTimeout(window.location.reload.bind(window.location), 2000);
-        });
-      });
-    </script>
+    <script src="maze.js"></script>
 
     <!-- jQuery (потрібно для JavaScript плагінів Bootstrap) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

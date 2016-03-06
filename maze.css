@@ -17,6 +17,13 @@
 	display: none;
 }
 
+#butt {
+	background-color: #0C85FF;
+	border-radius: 5px;
+	width: 100px;
+	height: 30px;
+}
+
 #mazeBlock1 {
 	position: absolute;
 	width: 30px;
@@ -79,8 +86,9 @@
 #mazeBlock8 {
 	background-color: #FF382A;
 	width: 10%;
-	height: 10%;
+	height: 20%;
 	margin: 10px;
+	margin-top: -100px;
 	float: left;
 }
 
@@ -89,9 +97,67 @@
 	width: 10%;
 	height: 10%;
 	margin: 10px;
+	margin-top: -60px;
 	float: left;
 }
 
+#mazeBlock10 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 10%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock11 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 10%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock12 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 10%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock13 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 10%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock14 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 10%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock15 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 10%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock16 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 10%;
+	margin: 10px;
+	float: left;
+}
+
+/*
 {
 	position: absolute;
 	width: 30px;
@@ -102,3 +168,4 @@
 	margin-left: 943px;
 	margin-top: 245px;
 }
+*/
