@@ -1,0 +1,104 @@
+.maze-container {
+	width: 50%;
+	height: 700px;
+	margin: 100px auto;
+	border: 1px solid black;
+}
+
+#modalGameOver {
+	background-color: #FF382A;
+	text-align: center;
+	font-size: 40pt;
+	padding-top: 17%;
+	position: absolute;
+	width: 49.9%;
+	height: 698px;
+	margin: 0 auto;
+	display: none;
+}
+
+#mazeBlock1 {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: #fff;
+	margin-left: -15px;
+	margin-top: 335px;
+}
+
+#mazeBlock2 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 10%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock3 {
+	background-color: #FF382A;
+	width: 15%;
+	height: 15%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock4 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 18%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock5 {
+	background-color: #FF382A;
+	width: 20%;
+	height: 15%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock6 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 10%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock7 {
+	background-color: #FF382A;
+	width: 22%;
+	height: 26%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock8 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 10%;
+	margin: 10px;
+	float: left;
+}
+
+#mazeBlock9 {
+	background-color: #FF382A;
+	width: 10%;
+	height: 10%;
+	margin: 10px;
+	float: left;
+}
+
+{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: #fff;
+	margin-left: 943px;
+	margin-top: 245px;
+}
