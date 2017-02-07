@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Reset CSS */
+
+body {
+	background-color: #fafafa;
+	font-family: "PT Sans", Tahoma, Arial;
+}
+
+.wrap {
+	position: relative;
+	background-color: #eee;
+	width: 920px;
+	margin: 0 auto;
+	height: 500px;
+}
+
+header {
+	background-color: #00bcd4;
+	box-shadow: 0 1px 5px 0 #888;
+	overflow: hidden;
+	width: 100%;
+	height: 40px;
+}
+
+.my-phone {
+	position: absolute;
+	right: 120px;
+	width: 200px;
+	height: 40px;
+	font-family: "PT Sans", Tahoma, Arial;
+}
+
+.phone {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 10px 10px 0 0;
+}
+
+.number {
+	height: 40px;
+	margin-top: 12px;
+}
+
+.github {
+	position: absolute;
+	background-color: #00bcd4;
+	width: 40px;
+	height: 40px;
+	right: 80px;
+	cursor: pointer;
+	transition: box-shadow 0.3s;
+}
+
+.gh-img {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 5px;
+	left: 5px;
+}
+
+.vk {
+	position: absolute;
+	background-color: #00acc1;
+	width: 40px;
+	height: 40px;
+	right: 40px;
+	cursor: pointer;
+	transition: box-shadow 0.3s;
+}
+
+.vk-img {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 5px;
+	left: 5px;
+}
+
+.fb {
+	position: absolute;
+	background-color: #0097a7;
+	width: 40px;
+	height: 40px;
+	right: 0;
+	cursor: pointer;
+	transition: box-shadow 0.3s;
+}
+
+.fb-img {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 5px;
+	left: 5px;
+}
+
+
+.github:hover, .fb:hover, .vk:hover {
+	box-shadow: 0 0 6px 0 #999;
+	z-index: 2;
+}
+
+/* Main block */
+
+.nav-block {
+	width: 0;
+	height: 35px;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	box-shadow: 0 1px 5px 0 #888;
+	overflow: hidden;
+	-webkit-transition: width .5s ease-in-out .8s, height .5s ease-in-out .3s;
+}
+
+.nav-block.open {
+	width: 150px;
+	height: 141px;
+	-webkit-transition: width .5s ease-in-out, height .5s ease-in-out .5s;
+}
+.nav-block.open a {
+	opacity: 1;
+	-webkit-transition: opacity .3s ease-in-out 1s;
+}
+
+.menu li {
+	padding: 10px;
+	text-align: left;
+	background-color: #fafafa;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.menu li:last-child {
+	border-bottom: 1px solid #ddd;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #888;
+	opacity: 0;
+	-webkit-transition: opacity .3s ease-in-out;
+}
