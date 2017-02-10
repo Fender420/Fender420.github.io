@@ -3,7 +3,6 @@
   "use strict";
 
   var toggles = document.querySelectorAll(".c-hamburger");
-  var menuBlock = document.querySelectorAll(".nav");
 
   for (var i = toggles.length - 1; i >= 0; i--) {
     var toggle = toggles[i];
@@ -17,4 +16,17 @@
       this.classList.remove("is-active") : this.classList.add("is-active");
     });
   }
+
+  /* My change */
+
+  var menuBlock = document.getElementsByClassName('nav-block')[0];
+
+  toggleHandler.onload = document.addEventListener('click', function() {
+  if (!menuBlock.classList.contains('open')) {
+    toggle.classList.remove('is-active');
+  }
+});
+
+  /**/
+  
 })();

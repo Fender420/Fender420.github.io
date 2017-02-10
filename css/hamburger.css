@@ -16,6 +16,7 @@
   outline: none;
   border: none;
   cursor: pointer;
+  z-index: 3;
   transition: background 0.3s;
   transition: box-shadow 0.3s;
 }
@@ -25,7 +26,7 @@
 }
 
 .c-hamburger:hover {
-  box-shadow: 0 0 6px 0 #999;
+  box-shadow: 0 0 8px 0 #999;
 }
 
 .c-hamburger span {

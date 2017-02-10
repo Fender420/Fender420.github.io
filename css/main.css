@@ -47,11 +47,15 @@ table {
 	border-spacing: 0;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 /* End of Reset CSS */
 
 body {
 	background-color: #fafafa;
-	font-family: "PT Sans", Tahoma, Arial;
+	font-family: 'Roboto', sans-serif;
 }
 
 .wrap {
@@ -59,15 +63,17 @@ body {
 	background-color: #eee;
 	width: 920px;
 	margin: 0 auto;
-	height: 500px;
+	height: 700px;
 }
 
 header {
+	position: fixed;
 	background-color: #26c6da;
-	box-shadow: 0 1px 5px 0 #888;
+	box-shadow: 0 1px 6px 0 #999;
 	overflow: hidden;
-	width: 100%;
+	width: 920px;
 	height: 40px;
+	z-index: 4;
 }
 
 .email {
@@ -75,7 +81,6 @@ header {
 	right: 320px;
 	width: 250px;
 	height: 40px;
-	font-family: "PT Sans", Tahoma, Arial;
 }
 
 .my-phone {
@@ -83,7 +88,6 @@ header {
 	right: 120px;
 	width: 200px;
 	height: 40px;
-	font-family: "PT Sans", Tahoma, Arial;
 }
 
 .phone {
@@ -155,49 +159,96 @@ header {
 
 
 .github:hover, .fb:hover, .vk:hover {
-	box-shadow: 0 0 6px 0 #999;
+	box-shadow: 0 0 8px 0 #999;
 	z-index: 2;
 }
 
 /* Main block */
 
 .nav-block {
+	position: fixed;
+	top: 40px;
 	width: 0;
 	height: 35px;
 	font-weight: bold;
-	font-size: 0.9em;
-	text-transform: uppercase;
-	box-shadow: 0 1px 5px 0 #888;
 	overflow: hidden;
+	font-size: 0.9em;
+	z-index: 2;
+	text-transform: uppercase;
+	box-shadow: 0 1px 4px 0 #aaa;
 	-webkit-transition: width .5s ease-in-out .8s, height .5s ease-in-out .3s;
 }
 
 .nav-block.open {
+	z-index: 3;
 	width: 150px;
 	height: 141px;
+	z-index: 2;
 	-webkit-transition: width .5s ease-in-out, height .5s ease-in-out .5s;
 }
-.nav-block.open a {
+.nav-block.open .i {
 	opacity: 1;
 	-webkit-transition: opacity .3s ease-in-out 1s;
 }
 
-.menu li {
+.nav-block > input {
+	display: none;
+}
+
+.nav-block > label {
+	display: block;
 	padding: 10px;
 	text-align: left;
+	z-index: 2;
+	cursor: pointer;
 	background-color: #fafafa;
 	border-top: 1px solid #ddd;
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
 }
 
-.menu li:last-child {
+.nav-block > label:last-child {
 	border-bottom: 1px solid #ddd;
 }
 
-.menu li a {
-	text-decoration: none;
-	color: #888;
+.nav-block .i {
+	color: rgba(0, 0, 0, 0.54);
 	opacity: 0;
 	-webkit-transition: opacity .3s ease-in-out;
+}
+
+.nav-block > label:hover {
+	background-color: #ffe0b2;
+}
+
+.nav-block > input:checked + label {
+	background-color: #ffa726;
+}
+
+.nav-items > div {
+	position: absolute;
+	width: 700px;
+	top: 70px;
+	left: 151px;
+	background-color: #fafafa;
+	box-shadow: 0 1px 2px 0 #aaa;
+	padding: 20px;
+}
+
+#cv, #port, #cert, #lor {
+  opacity: 0;
+  z-index: 0;
+  transition: opacity .3s;
+}
+
+.nav-items h2{
+	font-weight: bold;
+	font-size: 1.8em;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.avatar {
+	height: 220px;
+	margin: 20px 20px 20px 0;
+	border: 1px solid #eee;
 }

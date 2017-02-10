@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="icons/png/glyphicons-4-user.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hamburger.css">
     <title>Yaroslav CV</title>
@@ -33,15 +34,35 @@
         </div>
       </header>
       <main>
-        <nav class="nav-block">
-          <ul class="menu">
-            <li><a href="">Резюме</a></li>
-            <li><a href="">Портфолио</a></li>
-            <li><a href="">Сертификаты</a></li>
-            <li><a href="">Lorem</a></li>
-          </ul>
-        </nav>
-
+        <div class="nav-block">
+          <input type="radio" name="menu" id="tab-nav-1" checked>
+          <label for="tab-nav-1"><span class="i">Резюме</span></label>
+          <input type="radio" name="menu" id="tab-nav-2">
+          <label for="tab-nav-2"><span class="i">Портфолио</span></label>
+          <input type="radio" name="menu" id="tab-nav-3">
+          <label for="tab-nav-3"><span class="i">Сертификаты</span></label>
+          <input type="radio" name="menu" id="tab-nav-4">
+          <label for="tab-nav-4"><span class="i">Lorem</span></label>
+        </div>
+          <div class="nav-items">
+            <div id="cv">
+              <h2>Резюме</h2>
+              <img class="avatar" src="img/avatar.jpg" alt="Profile photo">
+              <p></p>
+            </div>
+            <div id="port">
+              <h2>Портфолио</h2>
+              <p></p>
+            </div>
+            <div id="cert">
+              <h2>Сертификаты</h2>
+              <p></p>
+            </div>
+            <div id="lor">
+              <h2>Lorem</h2>
+              <p></p>
+            </div>
+          </div>
       </main>
       <footer>
         
@@ -49,6 +70,7 @@
 
       <script type="text/javascript" src="js/humburger.js"></script>
       <script type="text/javascript" src="js/menu.js"></script>
+      <script type="text/javascript" src="js/checkbox.js"></script>
     </div>
   </body>
 </html>
