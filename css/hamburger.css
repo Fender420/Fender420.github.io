@@ -2,10 +2,11 @@
 
 .c-hamburger {
   display: block;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   margin: 0;
   padding: 0;
+  float: left;
   width: 40px;
   height: 40px;
   font-size: 0;
@@ -17,8 +18,8 @@
   border: none;
   cursor: pointer;
   z-index: 3;
-  transition: background 0.3s;
-  transition: box-shadow 0.3s;
+  transition: background .2s;
+  transition: box-shadow .2s;
 }
 
 .c-hamburger:focus {
@@ -67,7 +68,7 @@
 }
 
 .c-hamburger--htx span {
-  transition: background 0s 0.3s;
+  transition: background 0s .3s;
 }
 
 .c-hamburger--htx span::before,

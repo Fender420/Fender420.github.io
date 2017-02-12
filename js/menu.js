@@ -29,6 +29,7 @@ function stay() {
 
 function leave() {
 	menuBlock.classList.add('open');
+	window.scrollTo(0, 0);
 	setTimeout(menuBlock.addEventListener('mouseleave', function() {
 		menuBlock.classList.remove('open');
 		menuButton.classList.remove('is-active');

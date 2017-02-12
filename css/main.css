@@ -54,6 +54,7 @@ table {
 /* End of Reset CSS */
 
 body {
+	position: relative;
 	background-color: #fafafa;
 	font-family: 'Roboto', sans-serif;
 }
@@ -61,46 +62,19 @@ body {
 .wrap {
 	position: relative;
 	background-color: #eee;
-	width: 920px;
+	width: 69%;
 	margin: 0 auto;
-	height: 700px;
 }
 
 header {
 	position: fixed;
 	background-color: #26c6da;
 	box-shadow: 0 1px 6px 0 #999;
-	overflow: hidden;
-	width: 920px;
+	overflow: ;
+	width: 69%;
 	height: 40px;
 	z-index: 4;
-}
-
-.email {
-	position: absolute;
-	right: 320px;
-	width: 250px;
-	height: 40px;
-}
-
-.my-phone {
-	position: absolute;
-	right: 120px;
-	width: 200px;
-	height: 40px;
-}
-
-.phone {
-	float: left;
-	width: 20px;
-	height: 20px;
-	margin: 10px 10px 0 0;
-}
-
-.number {
-	height: 40px;
-	margin-top: 12px;
-	color: #fff;
+	margin-bottom: 20px; 
 }
 
 .github {
@@ -109,8 +83,9 @@ header {
 	width: 40px;
 	height: 40px;
 	right: 80px;
+	float: left;
 	cursor: pointer;
-	transition: box-shadow 0.3s;
+	transition: box-shadow .2s;
 }
 
 .gh-img {
@@ -127,8 +102,9 @@ header {
 	width: 40px;
 	height: 40px;
 	right: 40px;
+	float: left;
 	cursor: pointer;
-	transition: box-shadow 0.3s;
+	transition: box-shadow .2s;
 }
 
 .vk-img {
@@ -145,8 +121,9 @@ header {
 	width: 40px;
 	height: 40px;
 	right: 0;
+	float: left;
 	cursor: pointer;
-	transition: box-shadow 0.3s;
+	transition: box-shadow .2s;
 }
 
 .fb-img {
@@ -159,8 +136,8 @@ header {
 
 
 .github:hover, .fb:hover, .vk:hover {
-	box-shadow: 0 0 8px 0 #999;
-	z-index: 2;
+	box-shadow: 0 0 8px 0 #888;
+	z-index: 3;
 }
 
 /* Main block */
@@ -176,19 +153,19 @@ header {
 	z-index: 2;
 	text-transform: uppercase;
 	box-shadow: 0 1px 4px 0 #aaa;
-	-webkit-transition: width .5s ease-in-out .8s, height .5s ease-in-out .3s;
+	-webkit-transition: width .4s ease-in-out .8s, height .4s ease-in-out .4s;
 }
 
 .nav-block.open {
 	z-index: 3;
-	width: 150px;
+	width: 130px;
 	height: 141px;
 	z-index: 2;
-	-webkit-transition: width .5s ease-in-out, height .5s ease-in-out .5s;
+	-webkit-transition: width .4s ease-in-out, height .4s ease-in-out .4s;
 }
 .nav-block.open .i {
 	opacity: 1;
-	-webkit-transition: opacity .3s ease-in-out 1s;
+	-webkit-transition: opacity .4s ease-in-out .6s;
 }
 
 .nav-block > input {
@@ -226,29 +203,166 @@ header {
 }
 
 .nav-items > div {
-	position: absolute;
-	width: 700px;
+	position: relative;
+	width: 75%;
 	top: 70px;
-	left: 151px;
+	left: 131px;
 	background-color: #fafafa;
 	box-shadow: 0 1px 2px 0 #aaa;
 	padding: 20px;
 }
 
-#cv, #port, #cert, #lor {
-  opacity: 0;
-  z-index: 0;
-  transition: opacity .3s;
+#cv {
+	top: 70px;
 }
 
-.nav-items h2{
-	font-weight: bold;
-	font-size: 1.8em;
+#port {
+	top: -761px;
+}
+
+#cert {
+	top: -833px;
+}
+
+#lor {
+	top: -905px;
+}
+
+#cv, #port, #cert, #lor {
+	position: relative;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity .3s .2s;
+}
+
+.nav-items h2 {
+	font-size: 24pt;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.nav-items h3 {
+	margin: 20px 0;
+	font-weight: 400;
+	font-size: 24px;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.nav-items h4 {
+	margin-top: 25px;
+	font-weight: 400;
+	font-size: 20px;
+	color: rgb(38, 198, 218);
+}
+
+.nav-items p {
+	clear: both;
+	font-size: 13px;
+	line-height: 24px;
 	color: rgba(0, 0, 0, 0.87);
 }
 
 .avatar {
+	float: left;
 	height: 220px;
-	margin: 20px 20px 20px 0;
+	margin: 20px 20px 0 0;
+	box-shadow: 1px 1px 1px 0 #bbb;
+}
+
+.key-line {
+	margin-bottom: 15px;
+}
+
+.key-line span {
+	line-height: 30px;
+	font-weight: 400;
+	font-size: 20px;
+	color: rgb(38, 198, 218);
+}
+
+.under {
+	height: 12px;
+	width: 100%;
+	background-color: #eee;
 	border: 1px solid #eee;
+}
+
+.over {
+	height: 10px;
+	background-color: #ffa726;
+}
+
+.html, .css {
+	width: 90%;
+}
+
+.javascript {
+	width: 60%;
+}
+
+.git {
+	width: 70%;
+}
+
+.responsive {
+	width: 70%;
+}
+
+.adobe {
+	width: 70%;
+}
+
+.hard {
+	width: 70%;
+}
+
+.windows {
+	width: 80%;
+}
+
+
+/* Footer */
+
+footer {
+	position: absolute;
+	bottom: 0;
+	padding: 15px 0;
+	background-color: #00acc1;
+	box-shadow: 0 1px 6px 0 #999;
+	overflow: hidden;
+	width: 100%;
+	height: 80px;
+	z-index: 4;
+}
+
+.email {
+	position: relative;
+	margin: 20px 20px 0 210px;
+	width: 250px;
+	height: 40px;
+	float: left;
+}
+
+.my-phone {
+	position: relative;
+	margin: 20px 20px 0 50px;
+	width: 200px;
+	height: 40px;
+	float: left;
+}
+
+.phone {
+	margin: 0 5px;
+	position: relative;
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+
+.number {
+	margin: 0 5px;
+	position: relative;
+	height: 40px;
+	color: #fff;
+	float: left;
 }

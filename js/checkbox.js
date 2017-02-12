@@ -54,3 +54,10 @@ i4.onclick = function() {
 	lor.style.opacity = 1;
 	lor.style.zIndex = 1;
 };
+
+
+
+
+
+
+
