@@ -8,8 +8,25 @@ var port = document.getElementById('port');
 var cert = document.getElementById('cert');
 var lor = document.getElementById('lor');
 
-cv.style.opacity = 1;
-cv.style.zIndex = 1;
+var e = document.querySelectorAll('.over');
+
+cv.style.opacity = 0;
+cv.style.zIndex = 0;
+
+for (var i = 0; i < e.length; i++) {
+	e[i].style.width = 0;
+
+	cv.style.opacity = 1;
+	cv.style.zIndex = 1;
+
+	if (cv.style.opacity == 1 && cv.style.zIndex == 1) {
+		setTimeout( function() {
+			for (var i = 0; i < e.length; i++) {
+				e[i].style.width = '';
+			}
+		}, 0);
+	} 
+}
 
 i1.onclick = function() {
 	cv.style.opacity = 1;
@@ -20,6 +37,11 @@ i1.onclick = function() {
 	cert.style.zIndex = 0;
 	lor.style.opacity = 0;
 	lor.style.zIndex = 0;
+	setTimeout( function() {
+			for (var i = 0; i < e.length; i++) {
+				e[i].style.width = '';
+			}
+		}, 0);
 };
 
 i2.onclick = function() {
@@ -31,6 +53,11 @@ i2.onclick = function() {
 	cert.style.zIndex = 0;
 	lor.style.opacity = 0;
 	lor.style.zIndex = 0;
+	setTimeout( function() {
+			for (var i = 0; i < e.length; i++) {
+				e[i].style.width = 0;
+			}
+		}, 300);
 };
 
 i3.onclick = function() {
@@ -42,6 +69,11 @@ i3.onclick = function() {
 	cert.style.zIndex = 1;
 	lor.style.opacity = 0;
 	lor.style.zIndex = 0;
+	setTimeout( function() {
+			for (var i = 0; i < e.length; i++) {
+				e[i].style.width = 0;
+			}
+		}, 300);
 };
 
 i4.onclick = function() {
@@ -53,11 +85,9 @@ i4.onclick = function() {
 	cert.style.zIndex = 0;
 	lor.style.opacity = 1;
 	lor.style.zIndex = 1;
+	setTimeout( function() {
+			for (var i = 0; i < e.length; i++) {
+				e[i].style.width = 0;
+			}
+		}, 300);
 };
-
-
-
-
-
-
-

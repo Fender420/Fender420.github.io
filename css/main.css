@@ -54,7 +54,6 @@ table {
 /* End of Reset CSS */
 
 body {
-	position: relative;
 	background-color: #fafafa;
 	font-family: 'Roboto', sans-serif;
 }
@@ -63,6 +62,7 @@ body {
 	position: relative;
 	background-color: #eee;
 	width: 69%;
+	min-height: 1200px;
 	margin: 0 auto;
 }
 
@@ -70,7 +70,6 @@ header {
 	position: fixed;
 	background-color: #26c6da;
 	box-shadow: 0 1px 6px 0 #999;
-	overflow: ;
 	width: 69%;
 	height: 40px;
 	z-index: 4;
@@ -203,7 +202,9 @@ header {
 }
 
 .nav-items > div {
-	position: relative;
+	clear: both;
+	position: absolute;
+	display: block;
 	width: 75%;
 	top: 70px;
 	left: 131px;
@@ -214,25 +215,29 @@ header {
 
 #cv {
 	top: 70px;
+	margin-bottom: 00px;
 }
 
 #port {
-	top: -761px;
+	top: 70px;
 }
 
 #cert {
-	top: -833px;
+	top: 70px;
 }
 
 #lor {
-	top: -905px;
+	top: 70px;
 }
 
 #cv, #port, #cert, #lor {
-	position: relative;
+	clear: both;
+	position: absolute;
+	top: 70px;
+	left: 131px;
   opacity: 0;
   z-index: 0;
-  transition: opacity .3s .2s;
+  transition: opacity .3s;
 }
 
 .nav-items h2 {
@@ -294,65 +299,74 @@ header {
 
 .html, .css {
 	width: 90%;
+	transition: width 1s ease-in-out;
 }
 
 .javascript {
 	width: 60%;
+	transition: width 1s ease-in-out;
 }
 
 .git {
 	width: 70%;
+	transition: width 1.5s ease-in-out;
 }
 
 .responsive {
 	width: 70%;
+	transition: width 1.5s ease-in-out;
 }
 
 .adobe {
-	width: 70%;
+	width: 65%;
+	transition: width 1.5s ease-in-out;
 }
 
 .hard {
 	width: 70%;
+	transition: width 1.5s ease-in-out;
 }
 
 .windows {
 	width: 80%;
+	transition: width 1.5s ease-in-out;
 }
 
+.cert-img {
+	width: 100%;
+}
 
 /* Footer */
 
 footer {
-	position: absolute;
+	position: relative;
 	bottom: 0;
-	padding: 15px 0;
+	padding: 15px;
 	background-color: #00acc1;
 	box-shadow: 0 1px 6px 0 #999;
 	overflow: hidden;
-	width: 100%;
-	height: 80px;
+	width: 69%;
 	z-index: 4;
+	margin: 0 auto;
 }
 
 .email {
 	position: relative;
-	margin: 20px 20px 0 210px;
-	width: 250px;
+	margin: 0 auto;
 	height: 40px;
 	float: left;
+	margin: 0 20px 0 200px;
 }
 
 .my-phone {
 	position: relative;
-	margin: 20px 20px 0 50px;
-	width: 200px;
+	margin: 0 auto;
 	height: 40px;
 	float: left;
 }
 
 .phone {
-	margin: 0 5px;
+	margin: 0 5px 10px 20px;
 	position: relative;
 	float: left;
 	width: 20px;
@@ -360,7 +374,7 @@ footer {
 }
 
 .number {
-	margin: 0 5px;
+	margin: 0 10px 10px 10px;
 	position: relative;
 	height: 40px;
 	color: #fff;

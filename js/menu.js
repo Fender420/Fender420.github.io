@@ -29,9 +29,20 @@ function stay() {
 
 function leave() {
 	menuBlock.classList.add('open');
-	window.scrollTo(0, 0);
 	setTimeout(menuBlock.addEventListener('mouseleave', function() {
 		menuBlock.classList.remove('open');
 		menuButton.classList.remove('is-active');
 	}), 0);
 }
+
+
+function scroll(){
+	window.scrollBy(0, -20);
+	if (window.pageYOffset > 0) {
+		requestAnimationFrame(scroll);
+	}
+}
+
+menuBlock.addEventListener('click', function(e) {
+	scroll();
+}, false);
