@@ -62,8 +62,9 @@ body {
 	position: relative;
 	background-color: #eee;
 	width: 69%;
-	min-height: 1200px;
+	height: 1350px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 header {
@@ -260,11 +261,23 @@ header {
 	color: rgb(38, 198, 218);
 }
 
+.nav-items h5 {
+	margin-top: 25px;
+	font-weight: 200;
+	font-size: 18px;
+	color: rgb(38, 198, 218);
+}
+
 .nav-items p {
 	clear: both;
-	font-size: 13px;
+	margin: 10px 0;
+	font-size: 15px;
 	line-height: 24px;
 	color: rgba(0, 0, 0, 0.87);
+}
+ 
+.opacity {
+	opacity: 0.54;
 }
 
 .avatar {
@@ -274,7 +287,13 @@ header {
 	box-shadow: 1px 1px 1px 0 #bbb;
 }
 
+.key-line-block {
+	clear: both;
+	margin-top: 100px;
+}
+
 .key-line {
+	clear: both;
 	margin-bottom: 15px;
 }
 

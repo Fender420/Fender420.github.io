@@ -37,7 +37,7 @@ function leave() {
 
 
 function scroll(){
-	window.scrollBy(0, -20);
+	window.scrollBy(0, -30);
 	if (window.pageYOffset > 0) {
 		requestAnimationFrame(scroll);
 	}
