@@ -23,8 +23,8 @@
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: black;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 5;
 }
 
@@ -36,12 +36,14 @@
 .modal-content {
   position: relative;
   background-color: #fefefe;
+  cursor: pointer;
   margin: auto;
   left: 0.6%;
   padding: 0;
   width: 60%;
-  max-width: 1200px;
   z-index: 5;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
 }
 
 .modal-content:hover .prev {
@@ -64,7 +66,7 @@
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: #fafafa;
   text-decoration: none;
   cursor: pointer;
 }
@@ -104,7 +106,8 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.54);
+  color: #fafafa;
 }
 
 /* Number text (1/3 etc) */
@@ -138,4 +141,73 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+@media all and (max-width: 1024px) {
+  .modal {
+    padding-top: 40px;
+  }
+
+  .modal-content {
+    left: 0;
+    width: 75%;
+  }
+
+  .prev, .next {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.54);
+    color: #fafafa;
+  }
+
+  .close {
+    top: 30px;
+    right: 10px;
+    font-size: 50px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .modal {
+    padding-top: 40px;
+  }
+
+  .modal-content {
+    left: 0;
+    width: 75%;
+  }
+
+  .prev, .next {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.54);
+    color: #fafafa;
+  }
+
+  .close {
+    top: 30px;
+    right: 10px;
+    font-size: 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .modal {
+    padding-top: 40px;
+  }
+
+  .modal-content {
+    left: 0;
+    width: 90%;
+  }
+
+  .prev, .next {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.54);
+    color: #fafafa;
+  }
+
+  .close {
+    top: 30px;
+    right: 10px;
+    font-size: 50px;
+  }
 }

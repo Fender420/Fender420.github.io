@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="icons/png/glyphicons-4-user.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -16,14 +16,16 @@
         <div class="c-hamburger c-hamburger--htx">
           <span></span>
         </div>
-        <div class="github">
-          <img class="gh-img" src="img/githubsrc.png" alt="GitHub">
-        </div>
-        <div class="vk">
-          <img class="vk-img" src="img/vk-logo.png" alt="VK">
-        </div>
-        <div class="fb">
-          <img class="fb-img" src="img/fb-logo.png" alt="FB">
+        <div class="icon-cont">
+          <div class="github">
+            <img class="gh-img" src="img/githubsrc.png" alt="GitHub">
+          </div>
+          <div class="vk">
+            <img class="vk-img" src="img/vk-logo.png" alt="VK">
+          </div>
+          <div class="fb">
+            <img class="fb-img" src="img/fb-logo.png" alt="FB">
+          </div>
         </div>
       </header>
       <main>
@@ -139,37 +141,27 @@
                 <img src="img/cert-js.jpg" width="90%" onclick="openModal();currentSlide(4)" class="hover-shadow">
               </div>
             </div>
-
             <div id="myModal" class="modal">
               <span class="close cursor" onclick="closeModal()">&times;</span>
               <div class="modal-content">
-
                 <div class="mySlides">
                   <div class="numbertext">1 / 4</div>
-                    <img src="img/prometheus_web.jpg" style="width:100%">
+                    <img src="img/prometheus_web.jpg" style="width:100%" onclick="plusSlides(1)">
                 </div>
-
                 <div class="mySlides">
                   <div class="numbertext">2 / 4</div>
-                    <img src="img/cert-html.jpg" style="width:100%">
+                    <img src="img/cert-html.jpg" style="width:100%" onclick="plusSlides(1)">
                 </div>
-
                 <div class="mySlides">
                   <div class="numbertext">3 / 4</div>
-                    <img src="img/cert-css.jpg" style="width:100%">
+                    <img src="img/cert-css.jpg" style="width:100%" onclick="plusSlides(1)">
                 </div>
-
                 <div class="mySlides">
                   <div class="numbertext">4 / 4</div>
-                    <img src="img/cert-js.jpg" style="width:100%">
+                    <img src="img/cert-js.jpg" style="width:100%" onclick="plusSlides(1)">
                 </div>
-
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                <div class="caption-container">
-                  <p id="caption"></p>
-                </div>
               </div>
             </div>
             </div>
@@ -191,7 +183,6 @@
           <div class="number">+38(093)9491615</div>
         </div>
       </footer>
-    
     <script type="text/javascript" src="js/humburger.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
