@@ -46,7 +46,6 @@ i1.onclick = function() {
 				e[i].style.width = '';
 			}
 		}, 0);
-	wrap.style.height = 1350 + "px";
 };
 
 i2.onclick = function() {
@@ -63,7 +62,6 @@ i2.onclick = function() {
 				e[i].style.width = 0;
 			}
 		}, 300);
-	wrap.style.height = (document.documentElement.clientHeight - footer.clientHeight) + "px";
 };
 
 i3.onclick = function() {
@@ -80,7 +78,6 @@ i3.onclick = function() {
 				e[i].style.width = 0;
 			}
 		}, 300);
-	wrap.style.height = (document.documentElement.clientHeight - footer.clientHeight) + "px";
 };
 
 i4.onclick = function() {
@@ -97,6 +94,4 @@ i4.onclick = function() {
 				e[i].style.width = 0;
 			}
 		}, 300);
-	wrap.style.height = (document.documentElement.clientHeight - footer.clientHeight) + "px";
-
 };
