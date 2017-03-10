@@ -110,22 +110,6 @@
   color: #fafafa;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 12px;
-  padding: 8px 20px;
-  position: absolute;
-  top: 0;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
 img.demo {
   opacity: 0.6;
 }
@@ -201,7 +185,7 @@ img.hover-shadow {
 
   .prev, .next {
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.54);
+    background-color: rgba(0, 0, 0, 0.1);
     color: #fafafa;
   }
 
