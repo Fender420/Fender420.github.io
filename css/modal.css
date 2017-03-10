@@ -137,12 +137,6 @@ img.hover-shadow {
     width: 75%;
   }
 
-  .prev, .next {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.54);
-    color: #fafafa;
-  }
-
   .close {
     top: 30px;
     right: 10px;
@@ -158,12 +152,6 @@ img.hover-shadow {
   .modal-content {
     left: 0;
     width: 75%;
-  }
-
-  .prev, .next {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.54);
-    color: #fafafa;
   }
 
   .close {
@@ -184,9 +172,7 @@ img.hover-shadow {
   }
 
   .prev, .next {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #fafafa;
+    display: none;
   }
 
   .close {
