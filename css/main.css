@@ -638,3 +638,153 @@ footer {
 		margin-left: 20px;
 	}
 }
+
+@media all and (max-width: 480px) {
+	.wrap {
+		width: 100%;
+		height: 1400px;
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+
+	header {
+		width: 100%;
+		top: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	.github, .vk, .fb {
+		position: absolute;
+		
+	}
+
+	h2 {
+		text-align: center;
+
+	}
+
+	.nav-block.open {
+		position: fixed;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.nav-items > div {
+		clear: both;
+		position: absolute;
+		display: block;
+		width: 100%;
+		top: 40px;
+		left: 0;
+		background-color: #fafafa;
+		box-shadow: 0 1px 2px 0 #aaa;
+		padding: 20px;
+	}
+
+	.nav-items h2 {
+		font-size: 20pt;
+		font-weight: 200;
+		color: rgba(0, 0, 0, 0.87);
+	}
+
+	.nav-items h3 {
+		margin-top: 25px;
+		font-weight: 200;
+		font-size: 20px;
+		color: rgba(0, 0, 0, 0.87);
+	}
+
+	.nav-items h4 {
+		margin-top: 25px;
+		font-weight: 200;
+		font-size: 16px;
+		color: rgb(38, 198, 218);
+	}
+
+	.nav-items h5 {
+		margin-top: 25px;
+		font-weight: 200;
+		font-size: 16px;
+		color: rgb(38, 198, 218);
+	}
+
+	.nav-items p {
+		clear: both;
+		margin: 10px 0;
+		font-size: 15px;
+		line-height: 24px;
+		color: rgba(0, 0, 0, 0.87);
+	}
+	.avatar {
+		clear: left;
+		height: 200px;
+		margin: 20px 20px 20px 0;
+		box-shadow: 1px 1px 1px 0 #bbb;
+	}
+
+	.key-line span {
+		line-height: 25px;
+		font-weight: 400;
+		font-size: 16px;
+		color: rgb(38, 198, 218);
+	}
+
+
+	#cv, #port, #cert, #lor {
+		clear: both;
+		position: absolute;
+		width: 100%;
+		top: 40px;
+		left: 0;
+	  opacity: 0;
+	  z-index: 0;
+	  transition: opacity .3s;
+	}
+
+	footer {
+		position: relative;
+		bottom: 0;
+		margin: 0;
+		padding: 0;
+		padding-left: 5%;
+		background-color: #00acc1;
+		box-shadow: 0 1px 6px 0 #999;
+		overflow: hidden;
+		width: 100%;
+		z-index: 4;
+		text-align: center;
+	}
+
+	.email {
+		position: relative;
+		margin: 10px 0 0 0;
+		padding: 0;
+		height: 40px;
+		clear: left;
+	}
+
+	.my-phone {
+		position: relative;
+		height: 40px;
+		clear: left;
+	}
+
+	.icon {
+		position: relative;
+		float: left;
+		display: inline;
+		width: 25px;
+		height: 25px;
+	}
+
+	.string {
+		position: relative;
+		display: inline;
+		height: 40px;
+		color: #fff;
+		float: left;
+	}
+}
