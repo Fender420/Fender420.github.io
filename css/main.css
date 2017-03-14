@@ -446,6 +446,7 @@ footer {
 @media all and (max-width: 800px) {
 	.wrap {
 		width: 100%;
+		height: 1450px;
 		position: relative;
 		margin: 0;
 		padding: 0;
@@ -642,7 +643,7 @@ footer {
 @media all and (max-width: 480px) {
 	.wrap {
 		width: 100%;
-		height: 1400px;
+		height: 1300px;
 		position: relative;
 		margin: 0;
 		padding: 0;
