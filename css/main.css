@@ -67,6 +67,10 @@ body {
 	overflow: hidden;
 }
 
+h2 {
+	height: 40px;
+}
+
 header {
 	position: fixed;
 	background-color: #26c6da;
