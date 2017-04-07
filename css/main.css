@@ -67,10 +67,6 @@ body {
 	overflow: hidden;
 }
 
-h2 {
-	height: 40px;
-}
-
 header {
 	position: fixed;
 	background-color: #26c6da;
@@ -232,6 +228,7 @@ header {
 	font-size: 24pt;
 	font-weight: 400;
 	color: rgba(0, 0, 0, 0.87);
+	height: 40px;
 }
 
 .nav-items h3 {
